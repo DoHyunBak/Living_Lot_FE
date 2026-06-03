@@ -5,6 +5,9 @@
   color: #1e293b;
   -webkit-font-smoothing: antialiased;
 
+  /* 라이트 모드 고정 — OS 다크모드 무시 */
+  color-scheme: light only;
+
   /* 한양대학교 팔레트 (한양 블루) */
   --brand: #0e4a84; /* 한양 블루 */
   --brand-dark: #093461;
@@ -28,9 +31,22 @@ body,
 
 body {
   background: var(--paper);
+  color: #1e293b;
 }
 
 button {
   font-family: inherit;
   cursor: pointer;
+}
+
+/* 다크모드 환경에서도 라이트 색상 강제 유지 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light only;
+    color: #1e293b;
+  }
+  body {
+    background: var(--paper);
+    color: #1e293b;
+  }
 }

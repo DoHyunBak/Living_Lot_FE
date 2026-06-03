@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import StudentView from './pages/StudentView'
 import AdminDashboard from './pages/AdminDashboard'
 import BottomNav from './components/BottomNav'
+import ChatBot from './components/ChatBot'
 import './App.css'
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
             </Routes>
           </main>
           <BottomNav />
+          <ChatBot />
         </div>
       </Router>
     </StoreProvider>
