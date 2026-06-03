@@ -1,0 +1,36 @@
+:root {
+  font-family: 'Pretendard Variable', Pretendard, system-ui, -apple-system, 'Segoe UI',
+    'Malgun Gothic', sans-serif;
+  line-height: 1.5;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+
+  /* 한양대학교 팔레트 (한양 블루) */
+  --brand: #0e4a84; /* 한양 블루 */
+  --brand-dark: #093461;
+  --brand-light: #e7eff7;
+  --accent: #c8102e; /* 한양 레드 (포인트) */
+  --ink: #0a2540;
+  --paper: #f4f6f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--paper);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
